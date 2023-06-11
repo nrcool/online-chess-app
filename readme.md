@@ -26,10 +26,11 @@ The Online Chess App utilizes the following technologies:
 To run the Online Chess App locally, follow these steps:
 
 1.  Clone the repository: `git clone https://github.com/your-username/online-chess-app.git`
-2.  Install the dependencies: `npm install`
-3.  Set up the MongoDB connection string in the `.env` file.
-4.  Start the server: `npm start`
-5.  Navigate to `http://localhost:3000` in your web browser.
+2. Nivigate to server folder.
+3.  Install the dependencies: `npm install`
+4.  Set up the MongoDB connection string in the `.env` file.
+5.  Start the server: `npm start ` or ` npm run dev ` 
+6.  Navigate to `http://localhost:8080` in your web browser.
 
 ## Usage
 

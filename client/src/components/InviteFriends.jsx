@@ -16,7 +16,7 @@ export default function InviteFriends() {
   return (
     <>
     
-<button onClick={()=>setShowModal(true)} type="button" className=" bg-lime-400 text-gray-900 bg-white hover:bg-lime-300 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700">
+<button onClick={()=>setShowModal(true)} type="button" className=" bg-gray-900 text-gray-900 bg-gray-800 hover:bg-gray-300 hover:text-cyan-950 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 text-white dark:hover:bg-gray-700">
   <svg aria-hidden="true" className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
   Invite Friends
 </button>
@@ -40,35 +40,35 @@ export default function InviteFriends() {
                 <p className="text-lg font-normal text-white ">use any link to share.</p>
                 <ul className="my-4 space-y-3">
                     <li>
-                        <EmailShareButton url="http://localhost:4000/register" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <EmailShareButton url="https://online-chess-app.onrender.com/#/register" className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <EmailIcon size={48}/>
                             <span className="flex-1 ml-3 whitespace-nowrap text-gray-100">Email</span>
                        
                         </EmailShareButton >
                     </li>
                     <li>
-                        <FacebookShareButton url="http://localhost:4000/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <FacebookShareButton url="https://online-chess-app.onrender.com/#/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <FacebookIcon size={48}/>
                             <span className="flex-1 ml-3 whitespace-nowrap text-gray-100">Facebook</span>
                             <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500  bg-lime-300 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
                         </FacebookShareButton >
                     </li>
                     <li>
-                        <WhatsappShareButton url="http://localhost:4000/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <WhatsappShareButton url="https://online-chess-app.onrender.com/#/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <WhatsappIcon size={48}/>
                             <span className="flex-1 ml-3 whitespace-nowrap text-gray-100">Whatsapp</span>
                             <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-lime-300 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
                         </WhatsappShareButton >
                     </li>
                     <li>
-                        <TwitterShareButton url="http://localhost:4000/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <TwitterShareButton url="https://online-chess-app.onrender.com/#/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <TwitterIcon size={48}/>
                             <span className="flex-1 ml-3 whitespace-nowrap text-gray-100">Twitter</span>
                             <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-lime-300 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>
                         </TwitterShareButton >
                     </li>
                     <li>
-                        <LinkedinShareButton url="http://localhost:4000/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
+                        <LinkedinShareButton url="https://online-chess-app.onrender.com/#/register"  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white">
                             <LinkedinIcon size={48}/>
                             <span className="flex-1 ml-3 whitespace-nowrap text-gray-100">LinkedIn</span>
                             <span className="inline-flex items-center justify-center px-2 py-0.5 ml-3 text-xs font-medium text-gray-500 bg-lime-300 rounded dark:bg-gray-700 dark:text-gray-400">Popular</span>

@@ -50,7 +50,7 @@ export default function Room() {
       <h3 className="text-lg font-medium text-gray-800">Joined Players:</h3>
           <ul className="mt-2 space-y-2">
               {room?.players?.map((user) => (
-                <li key={user.id} className="flex items-center">
+                <li key={user.id} className="flex items-center bg-gray-900 p-3">
                   <img
                     className="h-8 w-8 rounded-full mr-2"
                     src={user.imageUrl}

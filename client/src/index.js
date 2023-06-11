@@ -7,6 +7,6 @@ import reactDOM from "react-dom"
 import Container from "./context/Container.js"
 import { HashRouter } from "react-router-dom"
 import axios from "axios"
-axios.defaults.baseURL="http://localhost:8080"
+axios.defaults.baseURL=process.env.NODE_ENV==="developement"? "http://localhost:8080":"https://online-chess-app.onrender.com"
 
 reactDOM.render(<HashRouter> <Container> <App/></Container></HashRouter>,document.getElementById("root"))

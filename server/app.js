@@ -35,7 +35,7 @@ app.use(cors({origin:"http://localhost:3000",exposedHeaders:["token","socketId"]
  //parse form-urlencoded data
 app.use(express.static("views/public")) //serve static files from public folder
 app.use(morgan("dev"))
-
+app.use(express.static("views/build"))
 
 
 
@@ -48,6 +48,11 @@ io.on('connection', (socket) => {
     })
   }) */
 // _________________________________________________________________
+
+app.get("/",(req,res,next)=>{
+    res.sendFile("./views/build/index.html",{root:"."})
+})
+
 
 //create new room
 socket.on("create_room",async ({roomName,userId})=>{

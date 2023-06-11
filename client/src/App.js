@@ -7,27 +7,23 @@ import Room from './components/Room';
 import CreateRoom from './components/CreateRoom';
 import Home from './components/Home';
 import Protected from './components/Protected';
-
+import Navigation from './components/Navigation';
+import Profile from './components/Profile';
 
 
 
 function App() {
   return (
-    <div>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/register">register</Link></li>
-        <li><Link to="/lobby">Lobby</Link></li>
-       
-      </ul>
+    <div style={{margin:"0",padding:"0"}}>
+      <Navigation/>
 
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/register" element={<Register/>} />
-        <Route path="/lobby" element={<Protected> <Lobby/></Protected>} />
+        <Route path="/lobby" element={<Protected><Lobby/></Protected> } />
         <Route path="/lobby/:id" element={<Room/>} />
+        <Route path="/profile" element={<Profile/>} />
         <Route path="/createroom" element={<CreateRoom/>} />
 
 

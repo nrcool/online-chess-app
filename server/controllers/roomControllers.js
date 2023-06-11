@@ -15,7 +15,8 @@ export const getAllRooms = async (req, res, next) => {
 export const getSingleRoom = async (req, res, next) => {
     try {
       const { id } = req.params;
-      const room = await RoomCollection.findByID(id);
+      console.log(id)
+      const room = await RoomCollection.findById(id).populate("players");
       res.json({ success: true, data: room });
     } catch (err) {
       next(new httpErrors.NotFound("No record found !"));

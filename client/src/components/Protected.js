@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { MyContext } from '../context/MyContext'
 import { Navigate } from 'react-router-dom'
 
-export default function Protected({children}) {
+export default function Protected({children,navigate}) {
     const {user} =useContext(MyContext)
     if(user){
         return (
@@ -10,7 +10,7 @@ export default function Protected({children}) {
           ) 
         
     }else{
-   return <Navigate to="/login" />
+   return <Navigate to={`/login`} />
     }
   
 }

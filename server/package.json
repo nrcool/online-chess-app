@@ -14,11 +14,14 @@
   "author": "Naqvi",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.1.0",
+    "morgan": "^1.10.0",
     "socket.io": "^4.6.1"
   },
   "devDependencies": {

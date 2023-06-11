@@ -13,7 +13,7 @@ export const checkValidMoveForBishop = (target,item,gameBoard,setGameBoard)=>{
  
 
 
- export const validMove = (target, item, gameBoard) => {
+ export const validMove = (target, item, gameBoard,playerTurn) => {
     const boardSize=8
     switch (item.piece) {
       case "pown":

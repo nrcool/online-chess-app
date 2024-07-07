@@ -23,13 +23,13 @@ app.use(express.json())
 const server = http.createServer(app);
 
 const io = new Server(server,{cors:{
-    origin:"http://localhost:8080",
+    origin:process.env.NODE_ENV?"http://localhost:8080":"https://online-chess-app.vercel.app/",
     exposedHeaders:["token","socketId"]
 }});
 
 
 //middlewares
-app.use(cors({origin:"http://localhost:3000",exposedHeaders:["token","socketId"]})) //handle cors error(allow all cross origins)
+/* app.use(cors({origin:"http://localhost:3000",exposedHeaders:["token","socketId"]})) */ //handle cors error(allow all cross origins)
  //parse json data
 
  //parse form-urlencoded data

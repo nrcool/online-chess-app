@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "./static/css/main.eb959f58.css",
-    "main.js": "./static/js/main.ad582d81.js",
+    "main.js": "./static/js/main.6f2d90dc.js",
     "static/media/leader-success-chess-pieces.jpg": "./static/media/leader-success-chess-pieces.7799207b2db37c4346d6.jpg",
     "static/media/chess-playing-hand.webp": "./static/media/chess-playing-hand.88fffc75b6ef0aa5dab9.webp",
     "static/media/27319.746c2259.5000x5000o.5f1afccd859f.png": "./static/media/27319.746c2259.5000x5000o.5f1afccd859f.8bad8c7198c3bfe2decc.png",
     "static/media/notify.mp3": "./static/media/notify.d27dbe284ccc3ce8d907.mp3",
     "index.html": "./index.html",
     "main.eb959f58.css.map": "./static/css/main.eb959f58.css.map",
-    "main.ad582d81.js.map": "./static/js/main.ad582d81.js.map"
+    "main.6f2d90dc.js.map": "./static/js/main.6f2d90dc.js.map"
   },
   "entrypoints": [
     "static/css/main.eb959f58.css",
-    "static/js/main.ad582d81.js"
+    "static/js/main.6f2d90dc.js"
   ]
 }

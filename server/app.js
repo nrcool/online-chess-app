@@ -23,7 +23,7 @@ app.use(express.json())
 const server = http.createServer(app);
 
 const io = new Server(server,{cors:{
-    origin:process.env.NODE_ENV?"http://localhost:8080":"https://online-chess-app.vercel.app/",
+    origin:process.env.NODE_ENV==="development"?"http://localhost:8080":"https://online-chess-app.vercel.app/",
     exposedHeaders:["token","socketId"]
 }});
 
